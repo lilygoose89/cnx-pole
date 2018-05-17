@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section>
+  <h1>Posts filed under '{{ page.title }}'</h1>
+  {% for post in page.posts %}
+  <div>
+    <h3>{{post.title}}</h3>
+    <p class="pad-top-xs">{{ post.date | date: "%b %-d, %Y" }}</p>
+    <img src="{{post._image}}" alt="{{post.image-alt}}"/>
+    <p>{{post.excerpt}}</p>
+    <a href="{{ post.url | prepend: site.baseurl }}"><button class="button">Read More</button></a>
+  </div>
+  {% endfor %}
+  <span class="hor-line"></span>
+  <a href="/blog"><button>Go back to main blog page</button></a>
+</section>

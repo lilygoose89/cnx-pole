@@ -1,0 +1,182 @@
+/* universal styles ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout ----------------------------------------- */
+/* add because gridlex "bumps" the page layout beyond 100vw and causes "wiggle" in mobile */
+[class*=grid-],[class*=grid_],[class~=grid] {
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (max-width:1024px) {
+
+}
+@media all and (max-width:768px) {
+
+}
+@media all and (max-width:576px) {
+
+}
+
+/* typography ----------------------------------------- */
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+/* link and button styles ----------------------------------------- */
+
+/* container styles ----------------------------------------- */
+
+/* header and nav styles ----------------------------------------- */
+
+/* footer styles ----------------------------------------- */
+
+/* homepage styles ----------------------------------------- */
+
+/* post styles ----------------------------------------- */
+
+/* form styles ----------------------------------------- */
+
+/* helpers ----------------------------------------- */
+
+/* PADDING/MARGINS */
+.container-center {
+  margin: 0 auto !important;
+}
+.pad-all-xs {
+  padding: 1%;
+}
+.pad-all-s {
+  padding: 5%;
+}
+.pad-all-m {
+  padding: 10%;
+}
+.pad-all-l {
+  padding: 20%;
+}
+.pad-top-xs {
+  padding-top: 1%;
+}
+.pad-top-s {
+  padding-top: 5%;
+}
+.pad-top-m {
+  padding-top: 10%;
+}
+.pad-top-l {
+  padding-top: 20%;
+}
+.pad-right-xs {
+  padding-right: 1%;
+}
+.pad-right-s {
+  padding-right: 5%;
+}
+.pad-right-m {
+  padding-right: 10%;
+}
+.pad-right-l {
+  padding-right: 20%;
+}
+.pad-bottom-xs {
+  padding-bottom: 1%;
+}
+.pad-bottom-s {
+  padding-bottom: 5%;
+}
+.pad-bottom-m {
+  padding-bottom: 10%;
+}
+.pad-bottom-l {
+  padding-bottom: 20%;
+}
+.pad-left-xs {
+  padding-left: 1%;
+}
+.pad-left-s {
+  padding-left: 5%;
+}
+.pad-left-m {
+  padding-left: 10%;
+}
+.pad-left-l {
+  padding-left: 20%;
+}
+.margin-all-xs {
+  margin: 1%
+}
+.margin-all-s {
+  margin: 5%
+}
+.margin-all-m {
+  margin: 10%
+}
+.margin-all-l {
+  margin: 20%
+}
+.margin-top-xs {
+  margin-top: 1%
+}
+.margin-top-s {
+  margin-top: 5%
+}
+.margin-top-m {
+  margin-top: 10%
+}
+.margin-top-l {
+  margin-top: 20%
+}
+.margin-right-xs {
+  margin-right: 1%
+}
+.margin-right-s {
+  margin-right: 5%
+}
+.margin-right-m {
+  margin-right: 10%
+}
+.margin-right-l {
+  margin-right: 20%
+}
+.margin-bottom-xs {
+  margin-bottom: 1%
+}
+.margin-bottom-s {
+  margin-bottom: 5%
+}
+.margin-bottom-m {
+  margin-bottom: 10%
+}
+.margin-bottom-l {
+  margin-bottom: 20%
+}
+.margin-left-xs {
+  margin-left: 1%
+}
+.margin-left-s {
+  margin-left: 5%
+}
+.margin-left-m {
+  margin-left: 10%
+}
+.margin-left-l {
+  margin-left: 20%
+}
+/* POSITION */
+.position-rel {
+  position: relative;
+}
+.position-abs {
+  position: absolute;
+}
