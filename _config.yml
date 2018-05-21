@@ -2,6 +2,11 @@ collections:
   posts:
     output: true
     permalink: /:collection/:name
+  events:
+    output: true
+    permalink: /:collection/:name
+
+future: true
 
 gems:
   - jekyll-archives
