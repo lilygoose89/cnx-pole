@@ -25,7 +25,7 @@
   <body>
     <nav class="grid-spaceBetween-middle margin-left-s margin-right-s" id="top">
   <a href="" class="logo">CNX Pole</a>
-  <div class="col-4 grid-spaceBetween">
+  <div class="col-5_md-6_sm-7 grid-spaceBetween hide-mobile">
     <a href="#classes" class="nav-links">Classes</a>
     <a href="#schedule" class="nav-links">Schedule</a>
     <a href="#events" class="nav-links">Events</a>
@@ -33,18 +33,44 @@
     <a href="#about" class="nav-links">About</a>
     <a href="#contact" class="nav-links">Contact</a>
   </div>
+  <!-- mobile menu hamburger -->
+  <div class="nav-mobile-container">
+    <div class="toggle-mobile-menu">
+      <p><i class="fa fa-bars" aria-hidden="true"></i> Menu</p>
+    </div>
+  </div>
 </nav>
+<!-- mobile nav -->
+<div id="mobile-menu" class="grid-middle">
+  <div class="pad-top-m">
+    <a href="#" class="col-12 toggle-mobile-menu">
+      <i class="fa fa-times text-big" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="grid">
+    <a href="#classes" class="col-12 mobile-links toggle-mobile-menu">Classes</a>
+    <a href="#schedule" class="col-12 mobile-links toggle-mobile-menu">Schedule</a>
+    <a href="#events" class="col-12 mobile-links toggle-mobile-menu">Events</a>
+    <a href="#location" class="col-12 mobile-links toggle-mobile-menu">Location</a>
+    <a href="#about" class="col-12 mobile-links toggle-mobile-menu">About</a>
+    <a href="#contact" class="col-12 mobile-links toggle-mobile-menu">Contact</a>
+  </div>
+</div>
+<!-- scroll to top container (floats near the bottom right) -->
 <a href="#top" class="scroll-to-top-container"><i class="fa fa-arrow-circle-up scroll-to-top-icon" aria-hidden="true"></i></a>
 
     
-    <footer class="text-center grid-spaceAround pad-all-xs bg-grey">
-  <p class="col-12 pad-top-xs editable">Phone: <a href="tel:+66612791306">+66 (0)61 279-1306</a></p>
-  <div class="col-2_md-3_sm-4 grid-middle-center-spaceBetween icon-large pad-top-s pad-bottom-s">
-    <a href="https://www.facebook.com/groups/cnxpole/" target=blank><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/cnxpole/" target=blank><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <footer class="text-center grid-spaceAround bg-grey">
+  <div class="footer-container">
+    <p class="col-12 editable text-white pad-bottom-s">Phone: <a href="tel:+66612791306">+66 (0)61 279-1306</a></p>
+    <div class="col-2_md-3_sm-4 grid-middle-center-spaceBetween icon-large">
+      <a href="https://www.facebook.com/groups/cnxpole/" target=blank><i class="fa fa-facebook-square text-white" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/cnxpole/" target=blank><i class="fa fa-instagram text-white" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCh4xZBdGGOROBSnKwjToWeg?reload=9" target=blank><i class="fa fa-youtube-square text-white" aria-hidden="true"></i></a>
+    </div>
+    <p class="col-12 text-white pad-top-s"><i class="fa fa-copyright text-white" aria-hidden="true"></i> CNX Web <script type="text/javascript">
+    document.write(new Date().getFullYear()); </script> | Created by <a href="http://cnxweb.site" target=blank>CNX Web</a></p>
   </div>
-  <p class="col-12"><i class="fa fa-copyright" aria-hidden="true"></i> CNX Web <script type="text/javascript">
-  document.write(new Date().getFullYear()); </script> | Created by <a href="http://cnxweb.site" target=blank>CNX Web</a></p>
 </footer>
 
   </body>

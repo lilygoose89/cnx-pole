@@ -25,7 +25,7 @@
   <body>
     <nav class="grid-spaceBetween-middle margin-left-s margin-right-s" id="top">
   <a href="" class="logo">CNX Pole</a>
-  <div class="col-4 grid-spaceBetween">
+  <div class="col-5_md-6_sm-7 grid-spaceBetween hide-mobile">
     <a href="#classes" class="nav-links">Classes</a>
     <a href="#schedule" class="nav-links">Schedule</a>
     <a href="#events" class="nav-links">Events</a>
@@ -33,18 +33,43 @@
     <a href="#about" class="nav-links">About</a>
     <a href="#contact" class="nav-links">Contact</a>
   </div>
+  <!-- mobile menu hamburger -->
+  <div class="nav-mobile-container">
+    <div class="toggle-mobile-menu">
+      <p><i class="fa fa-bars" aria-hidden="true"></i> Menu</p>
+    </div>
+  </div>
 </nav>
+<!-- mobile nav -->
+<div id="mobile-menu" class="grid-middle">
+  <div class="pad-top-m">
+    <a href="#" class="col-12 toggle-mobile-menu">
+      <i class="fa fa-times text-big" aria-hidden="true"></i>
+    </a>
+  </div>
+  <div class="grid">
+    <a href="#classes" class="col-12 mobile-links toggle-mobile-menu">Classes</a>
+    <a href="#schedule" class="col-12 mobile-links toggle-mobile-menu">Schedule</a>
+    <a href="#events" class="col-12 mobile-links toggle-mobile-menu">Events</a>
+    <a href="#location" class="col-12 mobile-links toggle-mobile-menu">Location</a>
+    <a href="#about" class="col-12 mobile-links toggle-mobile-menu">About</a>
+    <a href="#contact" class="col-12 mobile-links toggle-mobile-menu">Contact</a>
+  </div>
+</div>
+<!-- scroll to top container (floats near the bottom right) -->
 <a href="#top" class="scroll-to-top-container"><i class="fa fa-arrow-circle-up scroll-to-top-icon" aria-hidden="true"></i></a>
 
     <header class="bg-hero-image text-center">
-  <h1 class="pad-top-l text-shadow">Pole fitness in Chiang Mai, Thailand</h1>
-  <p class="pad-all-xs text-shadow">
-    For those who can't stand the gym or just want to try something new,
-    pole fitness combines the best of dance and resistance training.
-  </p>
+  <div class="hero-container">
+    <h1 class="text-white text-shadow">Pole fitness in Chiang Mai, Thailand</h1>
+    <p class="pad-all-xs text-white text-shadow">
+      For those who can't stand the gym or just want to try something new,
+      pole fitness combines the best of dance and resistance training.
+    </p>
+  </div>
   <div class="text-shadow grid-noGutter">
     <p class="col-12 strong no-gutter">STRONG</p>
-    <p class="col-12 no-gutter">is the new</p>
+    <p class="col-12 no-gutter text-white ">is the new</p>
     <p class="col-12 sexy no-gutter">Sexy</p>
   </div>
 </header>
@@ -67,15 +92,18 @@
           <li>
             <div class="outline-black box-shadow margin-all-xs">
               <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
+                <div class="col-5 hide-tablet">
                   <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Starter Pole"/>
+                    <img src="/images/polepose2.jpg" alt="image for Beginner Pole"/>
                   </div>
                 </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Starter Pole</h3>
-                  <p>New to pole? Start here for the basics. The focus of this class is on the principles behind the moves, essential vocabulary, and safety. By the end of a class, you will have learned some moves and spins, and put them together in a fun routine! Open to all fitness levels. If you have dance or gymnastics experience, you'll probably move on after one class. Total newbie? Repeat this class until you feel ready to level up.</p>
-                  <p class="text-grey">฿500</p>
+                <div class="col-5_sm-12">
+                  <div class="grid-spaceBetween">
+                    <h3 class="text-pink col-9">Beginner Pole</h3>
+                    <p class="text-grey text-right col-3">฿500</p>
+                  </div>
+                  <p>Welcome to Beginner Pole! The focus of this class is on the principles behind the moves, essential vocabulary, and safety. By the end of a class, you will have learned some moves and spins, and put them together in a fun routine! Open to all fitness levels. Celebrates all body-shapes.</p>
+                  <a href="https://cnxpole.setmore.com/" target=blank><button class="button-long">Sign Up</button></a>
                 </div>
               </div>
             </div>
@@ -84,66 +112,18 @@
           <li>
             <div class="outline-black box-shadow margin-all-xs">
               <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
+                <div class="col-5 hide-tablet">
                   <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Beginner Pole"/>
+                    <img src="/images/polepose1.jpg" alt="image for Beginner Choreo"/>
                   </div>
                 </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Beginner Pole</h3>
-                  <p>For students with a good grasp of the basics, or with previous training at another studio at Levels 1 or 2. The focus of this class is on expanding your range of moves, holds, poses, spins, and transitions. Classes may incorporate floor work, and will primarily use static pole.</p>
-                  <p class="text-grey">฿500</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Intermediate Pole"/>
+                <div class="col-5_sm-12">
+                  <div class="grid-spaceBetween">
+                    <h3 class="text-pink col-9">Beginner Choreo</h3>
+                    <p class="text-grey text-right col-3">฿500</p>
                   </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Intermediate Pole</h3>
-                  <p>For students with experience and knowledge of a broad range of moves, or with previous training at another studio at Level 2 or above. The focus of this class is on refining your technique, so you can get off the ground with climbs and inverts. Classes will be more physically challenging, and will use both static and spinning pole.</p>
-                  <p class="text-grey">฿500</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Advanced Pole"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Advanced Pole</h3>
-                  <p>For students with a strong foundation in pole and ready to take it to the next level, ​or with previous training at Level 3 or above. The focus of this class will depend greatly on the student(s). Less class, more coaching, shape your own pole destiny!</p>
-                  <p class="text-grey">฿500</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Beginner Choreo"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Beginner Choreo</h3>
                   <p>Put your beginner moves to work in a choreographed routine emphasizing fluidity and musicality. Dance both on and off the pole in a short routine suitable for all fitness levels.</p>
-                  <p class="text-grey">฿500</p>
+                  <a href="https://cnxpole.setmore.com/" target=blank><button class="button-long">Sign Up</button></a>
                 </div>
               </div>
             </div>
@@ -152,100 +132,18 @@
           <li>
             <div class="outline-black box-shadow margin-all-xs">
               <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
+                <div class="col-5 hide-tablet">
                   <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Intermediate Choreo"/>
+                    <img src="/images/polepose3.jpg" alt="image for Pole Jam"/>
                   </div>
                 </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Intermediate Choreo</h3>
-                  <p>Challenge yourself by combining pole moves that will take you around the pole, on the floor, upside-down, and everywhere in between, all while developing your musicality and artistry. Classes may be fast-paced and more physically challenging.</p>
-                  <p class="text-grey">฿500</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Exotic Choreo"/>
+                <div class="col-5_sm-12">
+                  <div class="grid-spaceBetween">
+                    <h3 class="text-pink col-9">Pole Jam</h3>
+                    <p class="text-grey text-right col-3">฿200</p>
                   </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Exotic Choreo</h3>
-                  <p>Explore the sexy side of pole! Routines will combine beginner moves with lots of hip circles, body waves, and attitude! Suitable for all fitness levels, women only.</p>
-                  <p class="text-grey">฿500</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Pole Power"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Pole Power</h3>
-                  <p>An energetic one-hour class to build your strength and stamina. Exercises take place both on and off the pole. Open to any fitness level - but expect to work.</p>
-                  <p class="text-grey">฿400</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Flex"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Flex</h3>
-                  <p>A relaxing one-hour class to help you with flexibility, posture, and range of motion. Yoga inspired moves take place off the pole. Suitable for all fitness levels.</p>
-                  <p class="text-grey">฿400</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Open Pole"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Open Pole</h3>
-                  <p>Want to practice that elusive move on your own time or choreograph a routine? Do your own thing during this one-hour unsupervised practice time. Open to all Intermediate or Advanced students - Beginner students must get instructor permission first.</p>
-                  <p class="text-grey">฿200</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        
-          <li>
-            <div class="outline-black box-shadow margin-all-xs">
-              <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
-                  <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Pole Jam"/>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Pole Jam</h3>
                   <p>Pole play time! A chance to mix and mingle with all levels, collaborate, and just have fun. These extended sessions are as much about socializing and having fun as they are about celebrating pole dance and fitness.</p>
-                  <p class="text-grey">฿200</p>
+                  <a href="https://cnxpole.setmore.com/" target=blank><button class="button-long">Sign Up</button></a>
                 </div>
               </div>
             </div>
@@ -254,15 +152,18 @@
           <li>
             <div class="outline-black box-shadow margin-all-xs">
               <div class="grid-middle-spaceAround pad-all-s">
-                <div class="col-5">
+                <div class="col-5 hide-tablet">
                   <div class="class-image">
-                    <img src="/images/poleclass.jpg" alt="image for Private"/>
+                    <img src="/images/polepose4.jpg" alt="image for Private"/>
                   </div>
                 </div>
-                <div class="col-5">
-                  <h3 class="text-pink">Private</h3>
+                <div class="col-5_sm-12">
+                  <div class="grid-spaceBetween">
+                    <h3 class="text-pink col-9">Private</h3>
+                    <p class="text-grey text-right col-3">฿1500</p>
+                  </div>
                   <p>Get some one-on-one attention and set your own agenda during a one-hour class.</p>
-                  <p class="text-grey">฿1500</p>
+                  <a href="https://cnxpole.setmore.com/" target=blank><button class="button-long">Sign Up</button></a>
                 </div>
               </div>
             </div>
@@ -279,10 +180,10 @@
     </div>
   </div>
   <p class="text-center pad-top-xs">
-    Classes are one and a half hours long, unless otherwise noted, and begin with a warm-up.<br />All classes are open on a drop-in basis but availability is limited, so <a href="#contact">please get in touch to confirm attendance</a>.
+    Classes are one and a half hours long, unless otherwise noted, and begin with a warm-up.<br />All classes are open on a drop-in basis but availability is limited, so please sign up to confirm attendance.
   </p>
 </section>
-<section id="schedule" class="bg-grey-trans">
+<section id="schedule" class="bg-grey-trans text-center">
   <h2>Schedule</h2>
   <h3>Monday: Beginner Pole 17:30 - 19:00</h3>
   <h3>Wednesday: Beginner Pole 15:30 - 17:00</h3>
@@ -291,41 +192,43 @@
 <section id="events">
   <h2 class="text-center">Events</h2>
   <div class="outline-black box-shadow pad-all-s">
-    <h3 class="text-pink">This is the title of my event</h3>
-    <h4>1 June 2018</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <a href=""><button class="button">Learn more</button></a>
+    <h3 class="text-pink">Open Pole Play Day</h3>
+    <h4>Dates Announced Soon</h4>
+    <p class="text-small">Always wanted to give pole a try but never had a chance - or just felt too intimidated? Don't fear!<br /><br />Pole should be FUN, that's why I'm hosting Open Pole Playtime, a no-pressure chance to try pole for the first time. If you have previous pole experience, come jam and maybe show some newbies what you've got! Bring your heels, wear a tutu, whatever makes this event fun for you!<br /><br />I, your fearless pole leader Lily, will be on hand to give demos, coach and spot you, and answer any questions you might have about pole dancing.<br /><br />Drop in for as short or long a time as you like for a cover fee.</p>
+    <a href="https://www.facebook.com/groups/cnxpole/" target=blank><button class="button">Join the CNX Pole Group for Updates</button></a>
   </div>
   <!--  -->
 </section>
 <section id="location" class="bg-grey-trans">
-  <h2>Location</h2>
+  <h2 class="text-center">Location</h2>
   <div class="grid">
-    <div class="col-8">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.065962970597!2d98.98769811458115!3d18.795213465623032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a97cc27d4d7%3A0xd62ed4d7ac416232!2sIN+the+City+Hostel+%26+Co-Working+Space!5e0!3m2!1sen!2sth!4v1526882040461" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="col-8_sm-12">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.065962970597!2d98.98769811458115!3d18.795213465623032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a97cc27d4d7%3A0xd62ed4d7ac416232!2sIN+the+City+Hostel+%26+Co-Working+Space!5e0!3m2!1sen!2sth!4v1526882040461" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="col-4">
-      <p>Classes are hosted at In the City Hostel & Coworking</p>
-      <h4>Third Floor<br />61/1 Sripoom Road,<br />Chiang Mai, Thailand<br />50200</h4>
-      <img src="" alt="image of in the city hostel & coworking entrance"/>
+    <div class="col-4_sm-12 pad-left-s text-center-mobile">
+      <h4>Classes are hosted at In the City Hostel & Coworking</h4>
+      <h3 class="pad-bottom-m">Third Floor<br />61/1 Sripoom Road,<br />Chiang Mai, Thailand<br />50200</h3>
+      <!-- <img src="" alt="image of in the city hostel & coworking entrance"/> -->
     </div>
   </div>
 </section>
 <section id="about">
   <h2 class="text-center">About Us</h2>
   <div class="grid">
-    <div class="col-6">
+    <div class="col-6_sm-12">
       <!-- embeded instagram widget by lightwidget -->
-      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/9d817e14092550589e02496462cf61db.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c1d038fe772c5964b4e9c3676eccdf21.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+      <h4 class="text-center-mobile">Show us some love and <a href="https://www.instagram.com/cnxpole/" target=blank>follow us on Instagram @cnxpole</a>.</h4>
     </div>
-    <div class="col-6">
-      <p class="pad-left-s text-small">You know that kid who never stopped moving? The one who performed at every goddamn talent show?<br /><br />That was me 😜<br /><br />I've danced on and off my whole life, but it wasn't until I discovered pole dance, that my passion became a need. Every time I left the studio, my brain would be buzzing with choreography ideas. I found it hard to get back to "real life" afterwards, and you won't believe the amount of time I've spent on YouTube watching the pros and screaming, "How did she do that?!?!" 🙌<br /><br />Pole is such a fun challenge! The first time you attempt a trick, it seems impossible. You don't have the core-strength, your back doesn't bend that way, or it just hurts too much to grip with that part of your body... You keep trying though, practicing your own half-ass version of it until one day, you jump on the pole and fucking nail it. There is no high like it. One day you also look in the mirror and realize there's new muscles on your body. Somehow while you were having all that fun, you got strong 💪<br /><br />I need more of this. I must pole dance all of the time. Everyone must know the joy of this fabulous exercise!<br />When I moved back to Chiang Mai, I couldn't find the right place to practice and challenge myself to take it to the next level.  So I decided I needed to open my own studio 😄<br /><br />I've started offering a handful of classes in a pop-up space, and hope to scale up to a dedicated studio by the end of the year. I'm no expert (I practice at about level 3/4) but I'd love to introduce you to the joys of pole, and if you're a hard-core pole dancer who finds yourself in Chiang Mai - I want you to have a place to practice. Teach pole? Awesome, let's figure out how to team up!<br />I'm so excited to get started, and I hope you are too.<br /><br />Lily xo
+    <div class="col-6_sm-12">
+      <p class="pad-left-s pad-right-s text-small">You know that kid who never stopped moving? The one who performed at every goddamn talent show?<br /><br />That was me 😜<br /><br />I've danced on and off my whole life, but it wasn't until I discovered pole dance, that my passion became a need. Every time I left the studio, my brain would be buzzing with choreography ideas. I found it hard to get back to "real life" afterwards, and you won't believe the amount of time I've spent on YouTube watching the pros and screaming, "How did she do that?!?!" 🙌<br /><br />Pole is such a fun challenge! The first time you attempt a trick, it seems impossible. You don't have the core-strength, your back doesn't bend that way, or it just hurts too much to grip with that part of your body... You keep trying though, practicing your own half-ass version of it until one day, you jump on the pole and fucking nail it. There is no high like it. One day you also look in the mirror and realize there's new muscles on your body. Somehow while you were having all that fun, you got strong 💪<br /><br />I need more of this. I must pole dance all of the time. Everyone must know the joy of this fabulous exercise!<br /><br />When I moved back to Chiang Mai, I couldn't find the right place to practice and challenge myself to take it to the next level.  So I decided I needed to open my own studio 😄<br /><br />I've started offering a handful of classes in a pop-up space, and hope to scale up to a dedicated studio by the end of the year. I'm no expert (I practice at about level 3/4) but I'd love to introduce you to the joys of pole, and if you're a hard-core pole dancer who finds yourself in Chiang Mai - I want you to have a place to practice. Teach pole? Awesome, let's figure out how to team up!<br />I'm so excited to get started, and I hope you are too.
       </p>
+      <h6 class="pad-left-s">Lily xoxo</h6>
     </div>
   </div>
 </section>
 <section id="contacts" class="bg-grey-trans">
-  <h2>Contact</h2>
+  <h2 class="text-center">Contact</h2>
   <form method="POST" action="http://formspree.io/lily@cnxweb.site" class="grid-spaceBetween margin-all-xs">
     <input type="hidden" name="_next" value="/thank-you.html" />
     <input type="hidden" name="_language" value="en" />
@@ -345,20 +248,23 @@
           <label class="form-label" for="message">Message</label>
           <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>
       </div>
-      <div class="text-center">
-          <button type="submit" class="button">Send Message</button>
+      <div class="text-center col-12">
+        <button type="submit" class="button-long">Send Message</button>
       </div>
   </form>
 </section>
 
-    <footer class="text-center grid-spaceAround pad-all-xs bg-grey">
-  <p class="col-12 pad-top-xs editable">Phone: <a href="tel:+66612791306">+66 (0)61 279-1306</a></p>
-  <div class="col-2_md-3_sm-4 grid-middle-center-spaceBetween icon-large pad-top-s pad-bottom-s">
-    <a href="https://www.facebook.com/groups/cnxpole/" target=blank><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-    <a href="https://www.instagram.com/cnxpole/" target=blank><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <footer class="text-center grid-spaceAround bg-grey">
+  <div class="footer-container">
+    <p class="col-12 editable text-white pad-bottom-s">Phone: <a href="tel:+66612791306">+66 (0)61 279-1306</a></p>
+    <div class="col-2_md-3_sm-4 grid-middle-center-spaceBetween icon-large">
+      <a href="https://www.facebook.com/groups/cnxpole/" target=blank><i class="fa fa-facebook-square text-white" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/cnxpole/" target=blank><i class="fa fa-instagram text-white" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCh4xZBdGGOROBSnKwjToWeg?reload=9" target=blank><i class="fa fa-youtube-square text-white" aria-hidden="true"></i></a>
+    </div>
+    <p class="col-12 text-white pad-top-s"><i class="fa fa-copyright text-white" aria-hidden="true"></i> CNX Web <script type="text/javascript">
+    document.write(new Date().getFullYear()); </script> | Created by <a href="http://cnxweb.site" target=blank>CNX Web</a></p>
   </div>
-  <p class="col-12"><i class="fa fa-copyright" aria-hidden="true"></i> CNX Web <script type="text/javascript">
-  document.write(new Date().getFullYear()); </script> | Created by <a href="http://cnxweb.site" target=blank>CNX Web</a></p>
 </footer>
 
   </body>

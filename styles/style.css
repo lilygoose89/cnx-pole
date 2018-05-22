@@ -9,7 +9,22 @@ img {
   height: auto;
 }
 section {
-  padding: 2% 15%;
+  padding: 2% 15% 8% 15%;
+}
+@media all and (max-width:1024px) {
+  section {
+    padding: 2% 8% 5% 8%;
+  }
+}
+@media all and (max-width:768px) {
+  section {
+    padding: 2% 5% 5% 5%;
+  }
+}
+@media all and (max-width:576px) {
+  section {
+    padding: 1% 5% 5% 5%;
+  }
 }
 
 /* layout ----------------------------------------- */
@@ -23,15 +38,6 @@ section {
   padding: 0;
 }
 
-@media all and (max-width:1024px) {
-
-}
-@media all and (max-width:768px) {
-
-}
-@media all and (max-width:576px) {
-
-}
 
 /* typography ----------------------------------------- */
 h1 {
@@ -39,10 +45,23 @@ h1 {
 }
 h2 {
   font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
   text-shadow: 2px 2px 0 rgba(228, 63, 111, 0.8);
 }
-h3,h4,h5,h6 {
+h3 {
   font-family: 'Oswald', sans-serif;
+}
+
+h4,h5 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: #444554;
+}
+h6 {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  font-size: 1em;
+  color: #e43f6f;
 }
 p {
   font-family: 'Oswald', sans-serif;
@@ -90,23 +109,56 @@ ul,li {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
-
+@media all and (max-width:768px) {
+  .hide-tablet {
+    display: none;
+  }
+}
+@media all and (max-width:576px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
 /* link and button styles ----------------------------------------- */
 p a {
   color: #3772ff;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 p a:hover {
+  text-decoration: underline;
+}
+h4 a {
+  color: #3772ff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+h4 a:hover {
   text-decoration: underline;
 }
 .button {
   background: transparent;
   border: #07020d 2px solid;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   color: #07020d;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   box-shadow: 2px 2px 0 #3772ff;
+  align-self: center;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  transition: all .5s ease;
+  letter-spacing: 1px;
 }
 .button:hover {
   box-shadow: none;
@@ -121,9 +173,65 @@ p a:hover {
   -o-transform: translateX(2px);
   transform: translateX(2px);
 }
+.button-long {
+  background: transparent;
+  border: #07020d 2px solid;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  color: #07020d;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 0 #3772ff;
+  align-self: center;
+  margin-top: 0.5em;
+  padding: 0.5em 1em;
+  transition: all .5s ease;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.button-long:hover {
+  box-shadow: none;
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+  -webkit-transform: translateX(2px);
+  -moz-transform: translateX(2px);
+  -ms-transform: translateX(2px);
+  -o-transform: translateX(2px);
+  transform: translateX(2px);
+}
+.nudge-right {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nudge-right:hover {
+  -webkit-transform: translateX(3px);
+  -moz-transform: translateX(3px);
+  -ms-transform: translateX(3px);
+  -o-transform: translateX(3px);
+  transform: translateX(3px);
+}
+.nudge-left {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nudge-left:hover {
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
 /* container styles ----------------------------------------- */
 .outline-black {
   border: 1px solid #07020d;
+  /* border-radius: 205px 12px 245px 17px/8px 255px 17px 250px; */
 }
 .box-shadow {
   box-shadow: 3px 3px 6px rgba(7, 2, 13,0.3);
@@ -141,7 +249,7 @@ p a:hover {
   background-color: #444554;
 }
 .bg-grey-trans {
-  background-color: rgba(68, 69, 84, 0.5);
+  background-color: rgba(68, 69, 84, 0.2);
 }
 /* header and nav styles ----------------------------------------- */
 nav {
@@ -188,6 +296,13 @@ nav {
   -webkit-font-smoothing: antialiased;
 }
 
+@media all and (max-width:576px) {
+  .scroll-to-top-container {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
 @keyframes wobbleud{
   0%{
     -webkit-transform: translateY(0);
@@ -217,7 +332,54 @@ nav {
     transform: translateX(0);
   }
 }
+/* mobile menu style ------------------------------------- */
+/*  MOBILE MENU */
+#mobile-menu {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 9999;
+}
+.mobile-links {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  line-height: 2;
+  font-weight: 300;
+  color: #07020d;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#mobile-menu.mobile-menu-visible {
+  display: block;
+}
+.nav-mobile-container {
+  display: none;
+}
+@media all and (max-width:576px) {
+  .nav-mobile-container {
+    display: block;
+  }
+}
+
 /* footer styles ----------------------------------------- */
+.footer-container {
+  padding: 2% 0 !important;
+}
+@media all and (max-width:768px) {
+  .footer-container {
+    padding: 5% 0 !important;
+  }
+}
+@media all and (max-width:576px) {
+  .footer-container {
+    padding: 8% 0 !important;
+  }
+}
 footer a {
   color: inherit;
 }
@@ -236,6 +398,9 @@ footer a {
   margin: 2vh 5% 0 5%;
   padding: 0 10%;
 }
+.hero-container {
+  padding: 10% 10% 5% 10%;
+}
 .strong {
   font-family: 'Oswald', sans-serif;
   font-weight: bolder;
@@ -252,7 +417,17 @@ footer a {
   max-width: 100%;
   height: auto;
 }
-
+@media all and (max-width:576px) {
+  .text-center-mobile {
+    text-align: center;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .hero-container {
+    padding: 1%;
+  }
+}
 /* post styles ----------------------------------------- */
 
 /* events styles ----------------------------------------- */
