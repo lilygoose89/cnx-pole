@@ -95,7 +95,7 @@ $(document).ready(function() {
     var section = $('*[id=' + link + ']');
 
     $('html,body').animate({
-      scrollTop: section.offset().top
+      scrollTop: section.offset().top - 20
     }, 800);
     return false;
   });

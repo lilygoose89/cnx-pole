@@ -253,10 +253,12 @@ h4 a:hover {
 }
 /* header and nav styles ----------------------------------------- */
 nav {
-  /* position: fixed;
+  position: fixed;
+  top: 0;
   z-index: 9999999999;
-  width: 100%; */
+  width: 100%;
   height: 8vh;
+  background-color: white;
 }
 .logo {
   font-family: 'Permanent Marker', cursive;
@@ -387,6 +389,9 @@ footer a {
   font-size: 2em;
 }
 /* homepage styles ----------------------------------------- */
+#top {
+  margin-top: 9vh;
+}
 .bg-hero-image {
   height: 85vh;
   background-color: #e43f6f;
