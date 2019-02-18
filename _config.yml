@@ -9,4 +9,17 @@ collections:
 future: true
 
 gems:
-  - jekyll-archives
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: CNX Pole | Chiang Mai's first pole dance and fitness studio
+author:
+  name: CNX Pole
+  email:
+  instagram: cnxpole
+social:
+  name: CNX Pole
+  links:
+    - cnxpole.com
