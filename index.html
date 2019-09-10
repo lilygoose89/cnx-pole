@@ -16,7 +16,7 @@ class:
       together in a fun routine! Open to all fitness levels. If you have dance
       or gymnastics experience, you'll probably move on after one class. Total
       newbie? Repeat this class until you feel ready to level up.
-    _image: /images/polepose2.png
+    _image: /images/truebeginner.jpg
     price: ฿550
   - name: Lvl 2 - Beginner Pole
     description: >-
@@ -24,12 +24,12 @@ class:
       another studio at Levels 1 or 2. The focus of this class is on expanding
       your range of moves, holds, poses, spins, and transitions. Classes may
       incorporate floor work, and will primarily use static pole.
-    _image: /images/polepose2.png
+    _image: /images/beginner.jpg
     price: ฿550
   - name: Lvl 3 - Beginner/Intermediate Pole
     description: >-
       For students with a good grasp of the basics, or with previous training at another studio. The focus of this class is on expanding your range of moves, holds, poses, spins, and transitions. Classes may incorporate floor work, and will primarily use static pole. Intermediate students will focus on refining techniques, and getting off the ground with climbs, inverts, and combos. Classes will be more physically challenging, and will use both static and spinning pole.
-    _image: /images/hang.png
+    _image: /images/intermediate.jpg
     price: ฿550
   - name: Pole Choreo
     description: >-
@@ -37,7 +37,7 @@ class:
       routine emphasizing fluidity and musicality. Dance both on and off the
       pole in a short routine suitable for all fitness levels. Recommended to
       already have a foundation in beginner pole.
-    _image: /images/polepose1.png
+    _image: /images/choreo.png
     price: ฿550
   - name: Open Pole
     description: >-
@@ -46,35 +46,26 @@ class:
       Teaching isn't provided for this session, but a trainer is on site to spot
       you and make sure you're training safely. Open to intermediate and
       advanced students or those with previous experience at other studios.
-    _image: /images/polepose5.png
+    _image: /images/openpole.jpg
     price: ฿300
   - name: Pole Play Day
     description: >-
       Pole play time! A chance to mix and mingle with all levels, collaborate,
       and just jam. These extended sessions are as much about socializing
       and having fun as they are about celebrating pole dance and fitness. A great chance for first-timers to drop in and get a taste.
-    _image: /images/polepose3.png
+    _image: /images/playday.jpg
     price: ฿300
   - name: Private
     description: >-
-      Get some one-on-one attention and set your own agenda during a one-hour
+      Get some one-on-one attention and set your own agenda during a private
       class. Please note that fees can be split with friends for a semi-private session.
-    _image: /images/polepose4.png
+    _image: /images/private.png
     price: ฿1500
   - name: Junior Pole
     description: >-
-      For 8-15 year old. Classes emphasize dance fundamentals and gymnastics. Great for kids who like to jump and climb!
-    _image: /images/poleclass.jpg
-    price: ฿550
-  - name: Intermediate Pole
-    description: >-
-      For students with experience and knowledge of a broad range of moves, or
-      with previous training at another studio at Level 2 or above. The focus of
-      this class is on refining your technique, so you can get off the ground
-      with climbs and inverts. Classes will be more physically challenging, and
-      will use both static and spinning pole.
-    _image: /images/junior2.jpg
-    price: ฿550
+      For 8-15 year old. Classes emphasize dance fundamentals and gymnastics. Great for kids who like to jump and climb! Classes are one hour long.
+    _image: /images/junior.jpg
+    price: ฿300
   - name: Advanced Pole
     description: >-
       For students with a strong foundation in pole ready to take it to the
@@ -142,7 +133,7 @@ class:
       <!-- these are the classes -->
       <div class="flexslider">
         <ul class="slides">
-        {% for class in page.class limit: 6 %}
+        {% for class in page.class limit: 8 %}
           <li>
             <div class="outline-black box-shadow margin-all-xs">
               <div class="grid-middle-spaceAround pad-all-s">
